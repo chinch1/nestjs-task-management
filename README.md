@@ -45,6 +45,19 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Making it work with database 
+
+```
+For making it work with the database, you need to run:
+
+  $ docker run --name postgres-nest -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+
+Then, create a database called "task-management" in the last database server created
+
+Then restart the app and create an instance of any module. The tables will appear on the DB
+
+```
+
 ## Test
 
 ```bash
